@@ -55,3 +55,32 @@ body {
   border-radius: 0;
   font-size: inherit;
 }
+
+/* Typography overrides */
+.prose h1 {
+  @apply font-black text-5xl;
+}
+
+.prose h2 {
+  @apply font-black text-4xl;
+}
+
+.prose h3 {
+  @apply font-black text-3xl;
+}
+
+.prose h4 {
+  @apply font-black text-2xl;
+}
+
+.prose h5 {
+  @apply font-black text-xl;
+}
+
+.prose h6 {
+  @apply font-black;
+}
+
+.prose p {
+  @apply font-medium;
+}

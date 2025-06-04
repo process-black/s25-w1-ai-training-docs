@@ -193,3 +193,11 @@ The markdown should now display with proper heading sizes, formatting, and synta
 ```
 still not working---please commit and push what we have so far and I will get OpenAI's Codex to work on this problem instead.
 ```
+## User Request 18
+```
+can you investigate the markdown rendering issue? h2 h3 etc are not bold or larger. Where are we styling the markdown?  I want to go with 900 inter for headings at appropriate sizes, and then 500 for body text.
+```
+
+## Claude Response 18
+Investigation shows that markdown is styled via the `@tailwindcss/typography` plugin and custom rules in `app/globals.css`. Headings inherited the `font-medium` weight from the `body` element, so they were not bold. Added typography overrides in `globals.css` to apply `font-black` (900 weight) to all headings and `font-medium` (500 weight) to regular text.
+
